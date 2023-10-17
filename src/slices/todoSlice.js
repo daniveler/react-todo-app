@@ -11,6 +11,7 @@ const getInitialTodo = () => {
 };
 
 const initialValue = {
+  filterStatus: 'all',
   todoList: getInitialTodo(),
 };
 
@@ -50,6 +51,9 @@ export const todoSlice = createSlice({
         state.todoList = todoListArr;
       }
     },
+    updateFilterStatus: (state, action) => {
+      state.filterStatus = action.payload;
+    },
     deleteTodo: (state, action) => {
       const todoList = window.localStorage.getItem('todoList');
 
@@ -68,5 +72,6 @@ export const todoSlice = createSlice({
   },
 });
 
-export const { addTodo, updateTodo, deleteTodo } = todoSlice.actions;
+export const { addTodo, updateTodo, updateFilterStatus, deleteTodo } =
+  todoSlice.actions;
 export default todoSlice.reducer;

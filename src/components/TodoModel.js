@@ -53,6 +53,7 @@ function TodoModel({ type, modelOpen, setModelOpen, todo }) {
           toast.success('Task updated succesfully');
         } else {
           toast.error('Todo was not changed.');
+          return;
         }
       }
       setModelOpen(false);
