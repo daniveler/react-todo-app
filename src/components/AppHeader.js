@@ -15,7 +15,7 @@ function AppHeader() {
         <option value="incomplete">Incomplete</option>
         <option value="complete">Complete</option>
       </SelectButton>
-      <TodoModel modelOpen={modelOpen} setModelOpen={setModelOpen} />
+      <TodoModel type="add" modelOpen={modelOpen} setModelOpen={setModelOpen} />
     </div>
   );
 }
