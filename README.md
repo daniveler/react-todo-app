@@ -1,38 +1,25 @@
-# React Todo App.
+# React JS To-do App
+The idea of this project was making a simple web application using React JS to get familiar with this framework. 
 
-SVG for CheckBox: [mentioned in the video]
+This app consists in a list of To-do tasks, with a title and status. All tasks created will be displayed at the main page, from where you can create new tasks, update and delete existing ones.
 
-```html
-<svg viewBox="0 0 53 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path
-		fill="none"
-		strokeMiterlimit="10"
-		strokeWidth="6"
-		d="M1.5 22L16 36.5L51.5 1"
-		strokeLinejoin="round"
-		strokeLinecap="round"
-	></path>
-</svg>
-```
+<div align="center">
+  <img src="images/todo-app.png" alt="Todo App main view"  width="80%"/>
+</div>
 
-## Starter files
-
-You can find all the starter files in `starter-files` branch. You can to go to the `starter-files` branch and `download zip` the the starter files or You can clone the project and git checkout to `starter-files` branch.
-
-## Getting Started
-
-The recommended way to get started with the project is Follow the `YouTube tutorial`. You will find all the step-by-step guides. Or you Can start the project on your own by following the guide below.
-
-After getting the starter files, you need to go the file directory and run
-
+## Running the application
+To run the application you only need to install the project dependencies with the command:
 ```shell
 npm install
 ```
 
-and after that start the dev server.
+and after that start the server with:
 
 ```shell
 npm start
 ```
 
-Happy Coding! 🚀
+The app will open in your browser in http://localhost:3000
+
+## References
+This project is based in [React Todo App project, from ShaifArfan](https://github.com/ShaifArfan/react-todo-app).
